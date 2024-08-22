@@ -1,0 +1,33 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Allow",
+            "Action": [
+                "ecs:ListServices",
+                "ecs:DescribeServices",
+                "ecs:ListTasks",
+                "ecs:DescribeTasks",
+                "ecs:ExecuteCommand"
+            ],
+            "Resource": [
+                "arn:aws:ecs:REGION:AWS_ACCOUNT_NUMBER:service/CLUSTER_NAME/SERVICE_NAME",
+                "arn:aws:ecs:REGION:AWS_ACCOUNT_NUMBER:container-instance/CLUSTER_NAME/*",
+                "arn:aws:ecs:REGION:AWS_ACCOUNT_NUMBER:task/CLUSTER_NAME/*",
+                "arn:aws:ecs:REGION:AWS_ACCOUNT_NUMBER:cluster/CLUSTER_NAME"
+            ]
+        },
+        {
+            "Sid": "Statement2",
+            "Effect": "Allow",
+            "Action": [
+                "ecs:ListClusters",
+                "ecs:DescribeClusters"
+            ],
+            "Resource": [
+                "*"
+            ]
+        }
+    ]
+}
