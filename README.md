@@ -50,9 +50,7 @@ You can specify the AWS region directly using the --region or -r flag:
 ```
 
 **Quick Demo**
-![](https://raw.githubusercontent.com/mabuwasel/ecs-session/main/demo.gif
-
-)
+![](https://raw.githubusercontent.com/mabuwasel/ecs-session/main/demo.gif)
 
 
 
